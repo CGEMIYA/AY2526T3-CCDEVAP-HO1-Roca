@@ -51,6 +51,72 @@
 
         </table>
        <br>
+
+       <section>
+            <h2>Classmate Interview Form</h2>
+            <p>Fill this out so we can find common ground and team up for future projects!
+                <br>
+                Note: This does not work (yet)
+            </p>
+
+            <form>
+                <!-- Input Type 1: Text -->
+                <p>
+                    <label for="student-name">Your Full Name:</label><br>
+                    <input type="text" id="student-name" name="studentName" required>
+                </p>
+
+                <!-- Input Type 2: Email -->
+                <p>
+                    <label for="student-email">Your School Email:</label><br>
+                    <input type="email" id="student-email" name="studentEmail" required>
+                </p>
+
+                <!-- Input Type 3: Radio Buttons -->
+                <p>
+                    <label>What is your preferred project style?</label><br>
+                    <input type="radio" id="style-creative" name="projectStyle" value="creative">
+                    <label for="style-creative">Purely Creative / Visual</label><br>
+                    
+                    <input type="radio" id="style-technical" name="projectStyle" value="technical">
+                    <label for="style-technical">Highly Technical / Analytical</label><br>
+                    
+                    <input type="radio" id="style-balanced" name="projectStyle" value="balanced">
+                    <label for="style-balanced">A mix of both</label>
+                </p>
+
+                <!-- Input Type 4: Checkboxes -->
+                <p>
+                    <label>What are your mutual interests? (Select all that apply):</label><br>
+                    <input type="checkbox" id="interest-music" name="interests" value="music">
+                    <label for="interest-music">Music & Playlists</label><br>
+                    
+                    <input type="checkbox" id="interest-gaming" name="interests" value="gaming">
+                    <label for="interest-gaming">Gaming / Tech</label><br>
+                    
+                    <input type="checkbox" id="interest-art" name="interests" value="art">
+                    <label for="interest-art">Art & Design</label>
+                </p>
+
+                <!-- Input Type 5: Range scale of 1-10 -->
+                <p>
+                    <label for="energy-level">How excited are you for this semester's projects? (1 to 10):</label><br>
+                    <input type="range" id="energy-level" name="energyLevel" min="1" max="10">
+                </p>
+
+                <!-- Input Type 6: Textarea -->
+                <p>
+                    <label for="message">Leave a message or a funny icebreaker quote:</label><br>
+                    <textarea id="message" name="userMessage" rows="4" cols="40"></textarea>
+                </p>
+
+                <!-- Submit Button -->
+                <p>
+                    <input type="submit" value="Send My Info">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
         <img src="foot.jpg" alt="Beach panorama" width="500" height="100"/>
         </main>
     
