@@ -3,62 +3,73 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
     <title>Introduction HTML by Shaun Stephen O. Roca</title>
 </head>
+    
     <body>
         <header>
             <nav>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Abstergo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Site Logo" width="50" height="50">
                 <a href="index.html">Home</a> |
-                <a id="top">More</a> |
+                <p>More</p> |
                 <a href="#down">Contacts</a>
             </nav>
             <hr>
         </header>
 
         <main>
-            <table >
-            <tr>
-                <th>My Skills are |</th>
-                <th colspan="2">My hobbies are |</th>
-                <th>My Favorite Media are |</th>
-            </tr>
+
+            <div class="showcase-grid">
+            <div class="grid-card">
+                <h3>My Skills</h3>
+                <ul>
+                    <li>Coding</li>
+                    <li>Time-Management</li>
+                    <li>Analysis</li>
+                </ul>
+            </div>
+
+            <div class="grid-card">
+                <h3>My Hobbies</h3>
+                <ul>
+                    <li>Reading</li>
+                    <li>Painting</li>
+                    <li>Biking</li>
+                </ul>
+            </div>
+
+            <div class="grid-card">
+                <h3>Favorite Media</h3>
                 
-            <tr>
-                <td>Coding |</td>
-                <td>Reading |</td>
-                <td><img src="tne.jpg" alt="The Novel's Extra" width="150" height="170"/> |</td>
-            </tr>
+                <div class="media-item">
+                    <img src="tne.jpg" alt="The Novel's Extra" width="150" height="170"/>
+                    <p><strong>The Novel's Extra</strong></p>
+                </div>
 
-            <tr>
-                <td>Time-Management |</td>
-                <td>Painting |</td>
-                <td><video controls width="250"><source src="mor.webm" type="video/webm">
-                            <source src="mor.mp4" type="video/mp4">
-                    </video> <br>Morrowind|
-                </td>
-            </tr>
+                <div class="media-item">
+                    <video controls width="200">
+                        <source src="mor.webm" type="video/webm">
+                        <source src="mor.mp4" type="video/mp4">
+                    </video>
+                    <p><strong>Morrowind</strong></p>
+                </div>
 
-            <tr>
-                <td>Analysis |</td>
-                <td>Biking |</td>
-                <td><audio controls src="aty.m4a">
-                    Your browser does not support the audio element
-                    </audio> |<br>
+                <div class="media-item">
+                    <audio controls src="aty.m4a" style="width:100%"></audio>
+                    <p><strong>A Thousand Years by JVKE</strong></p>
+                    <br>
                     <a href="aty.m4a">Download audio</a>
-                </td>
-            </tr>
-
-        </table>
-       <br>
-
+                </div>
+            </div>
+        </div>
        
-        <img src="foot.jpg" alt="Beach panorama" width="500" height="100"/>
+        <img src="foot.jpg" alt="Beach panorama" class="banner-img"/>
         </main>
 
         <section>
             <h2>Classmate Interview Form</h2>
-            <p>Fill this out so we can find common ground and team up for future projects!
+            <p style="color:#718096; margin-bottom: 20px;"> Fill this out so we can find common ground and team up for future projects!
                 <br>
                 Note: This does not work (yet)
             </p>
@@ -66,13 +77,13 @@
             <form>
                 <!-- Input Type 1: Text -->
                 <p>
-                    <label for="student-name">Your Full Name:</label><br>
+                    <label for="student-name">Your Full Name:</label>
                     <input type="text" id="student-name" name="studentName" required>
                 </p>
 
                 <!-- Input Type 2: Email -->
                 <p>
-                    <label for="student-email">Your School Email:</label><br>
+                    <label for="student-email">Your School Email:</label>
                     <input type="email" id="student-email" name="studentEmail" required>
                 </p>
 
@@ -111,27 +122,25 @@
                 <!-- Input Type 6: Textarea -->
                 <p>
                     <label for="message">Leave a message or a funny icebreaker quote:</label><br>
-                    <textarea id="message" name="userMessage" rows="4" cols="40"></textarea>
+                    <textarea id="message" name="userMessage" rows="4" cols="40" placeholder="Type something cool..."></textarea>
                 </p>
 
                 <!-- Submit Button -->
-                <p>
+                <div class="btn-container">
                     <input type="submit" value="Send My Info">
                     <input type="reset" value="Clear Form">
-                </p>
+                </div>
             </form>
         </section>
     
-        <a href="#top">Go Back To Top?</a>
+        
+         <a href="#top" class="back-top">Go Back To Top?</a>
         <hr>
         <footer>
-            <p> <a id="down">Contacts</a>: 
+            <p id="down">Contacts:
             <a href="https://github.com/CGEMIYA?tab=repositories" target="_blank">Github</a>
-            </p>
-            <p>&copy; Roca, Shaun 2026</p>
+            <a href="https://web.facebook.com/shaun.stephen.ocampo.roca" target="_blank">, Facebook</a>
+            <p id="copy">&copy; Roca, Shaun 2026</p>
         </footer>
     </body>
-
-
-
 </html>

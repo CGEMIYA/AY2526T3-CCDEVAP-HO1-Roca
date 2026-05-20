@@ -1,0 +1,216 @@
+/* --- Global Resets & Typography --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    padding-bottom: 60px;
+}
+
+body, html {
+        margin:0;
+        padding:10;
+        height: 100%;
+        overflow: auto ;
+        scroll-behavior: smooth;
+    }
+
+/*Main struct elems*/
+/* --- Main Structure Elements --- */
+main, section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #74b8e9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1 {
+    text-align: center;
+    color: #1a4a8e;
+    margin: 40px auto 20px auto;
+    font-weight: 900;
+}
+
+
+/*GRID*/
+
+/* --- Grid Displays --- */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.grid-card {
+    background: #fdfdfd;
+    border: 1px solid #eef2f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.media-item {
+    margin-top: 15px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --- Index Page "About Me" Card --- */
+#about {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: #eef5fc;
+    border-left: 5px solid #3a7cd9;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#bgvid {
+    position: fixed;       /* Stays in place even when scrolling */
+    top: 0%;           /* Start from middle vertically */
+    left: 0%;           /* Start from left horizontally */
+    min-width: 100%;       /* Ensure it covers the width */
+    min-height: 100%;      /* Ensure it covers the height */
+    width: auto;           /* Maintain aspect ratio */
+    height: auto;          /* Maintain aspect ratio */
+    z-index: -1;           /* Keep it behind other content */
+    object-fit: cover;     /* Crop to fill without distortion */
+    background: rgb(58, 124, 217);     /* Fallback background color */
+    transform: translate(-35%, -50%);
+    opacity: 0.90; /* Keeps text readable over the video */
+}
+
+
+/* --- Navigation Header --- */
+header {
+    background: rgba(140, 212, 244, 0.95);
+    /*-- backdrop-filter: blur(5px);*/
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav img {
+    border-radius: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3a7cd9;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    font-weight: bold
+}
+
+nav a:hover {
+    color: #1a4a8e;
+}
+
+/* --- Index Page "About Me" Card --- */
+#about {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: #eef5fc;
+    border-left: 5px solid #3a7cd9;
+    padding: 20px;
+    border-radius: 4px;
+    font-size:10;
+    color: #2c3e50;
+}
+
+/*Buttons*/
+.btn-container{
+    display: flex;
+    gap: 15px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+input[type="submit"] {
+    background: #3a7cd9;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: #1a4a8e;
+}
+
+input[type="reset"] {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+input[type="reset"]:hover {
+    background: #cbd5e1;
+}
+
+/* --- Footer & Helpers --- */
+.back-top {
+    display:block;
+    text-align: center;
+    margin: 30px auto;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #475569;
+    width: 20%;
+    height:5%;
+}
+
+.back-top:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1e293b;
+    color: #94a3b8;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #3a7cd9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

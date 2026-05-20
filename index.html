@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
     <title>Introduction HTML by Shaun Stephen O. Roca</title>
 </head>
 <body>
     <header>
         <nav>
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Abstergo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Site Logo" width="50" height="50">
-            <a id="top">Home</a> |
+            <p id="top">Home</p> |
             <a href="more.html">More</a> |
-            <a href="more.html">Contacts</a>
+            <a href="more.html#down">Contacts</a>
         </nav>
         <hr>
     </header>
 
+    <!--BACKGROUND IMAGE OR VIDEO-->
+        <video autoplay muted loop id="bgvid">
+            <source src="vid1.mp4" type="video/mp4">
+            <source src="vid1.webm" type="video/webm">
+             Your browser does not support HTML5 video.
+        </video>
+
     <h1>Welcome! Feast your eyes on my html website!</h1>
+    <main>
+    <div>
+        <img src="image1.jpg" alt="Image 1" width="300" height="450">
+        <img src="image2.jpg" alt="Image 2" width="350" height="450">
+        <img src="image3.jpg" alt="Image 3" width="300" height="450">
+
+        </div>
     <br>
-        <!-- Images placed next to each other -->
-    <img src="image1.jpg" alt="Image 1" width="300" height="450">
-    <img src="image2.jpg" alt="Image 2" width="350" height="450">
-    <img src="image3.jpg" alt="Image 3" width="300" height="450">
-   <br>
-    <p>
-        <strong>
-                        Hello! My name is Shaun Stephen O. Roca!<br>
-                      I am 20 years old, born on September 9, 2005.<br>
-                    My course is Computer Science Software Technology<br>
-                    I like the color blue and I love the sound of rain<br>
-        </strong> 
-    </p>
-   <br>
-    <a href="#top">Go Back To Top?</a>
-    <hr>
+        <p id="about">
+            <strong>
+                            Hello! My name is Shaun Stephen O. Roca!<br>
+                        I am 20 years old, born on September 9, 2005.<br>
+                        My course is Computer Science Software Technology<br>
+                        I like the color blue and I love the sound of rain<br>
+            </strong> 
+        </p>
+    </main>
+
+    <a href="#top" class="back-top">Go Back To Top?</a>
+    
     <footer>
         <p>&copy; Roca, Shaun 2026</p>
     </footer>
